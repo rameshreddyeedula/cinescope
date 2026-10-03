@@ -104,3 +104,4 @@ cinescope/
 ├── eslint.config.js
 ├── vite.config.js
 └── README.md
+```
