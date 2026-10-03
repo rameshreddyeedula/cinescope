@@ -1,16 +1,106 @@
-# React + Vite
+# 🎬 CineScope
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CineScope is a responsive movie discovery web application built with React and the TMDB API.
 
-Currently, two official plugins are available:
+Users can search for movies, explore popular movies, filter movies by language, sort results, browse through pages, and save their favorite movies.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
 
-## React Compiler
+[View CineScope Live](YOUR_NETLIFY_URL)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 💻 GitHub Repository
 
-## Expanding the ESLint configuration
+[View Source Code](https://github.com/rameshreddyeedula/cinescope)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+- 🔎 Search movies by name
+- 🎬 Browse popular movies
+- 🌐 Filter movies by:
+  - All Languages
+  - Telugu
+  - Hindi
+  - English
+- ⭐ Sort movies by rating
+- 📅 Sort movies by release date
+- 📄 Pagination for search results
+- ❤️ Add and remove favorite movies
+- 💾 Favorites are stored using Local Storage
+- ⏳ Loading states
+- ⚠️ Error handling
+- 📱 Responsive design
+- 🧭 React Router navigation
+- 🔐 API key managed using environment variables
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- React
+- JavaScript (JSX)
+- HTML
+- CSS
+- Vite
+
+### API
+
+- The Movie Database (TMDB) API
+
+### Tools
+
+- VS Code
+- Git
+- GitHub
+- Netlify
+
+---
+
+## 📂 Project Structure
+
+```text
+cinescope/
+│
+├── public/
+│   └── _redirects
+│
+├── src/
+│   ├── components/
+│   │   ├── EmptyState.jsx
+│   │   ├── ErrorMessage.jsx
+│   │   ├── Filters.jsx
+│   │   ├── Header.jsx
+│   │   ├── Loading.jsx
+│   │   ├── MovieCard.jsx
+│   │   ├── MovieGrid.jsx
+│   │   ├── Pagination.jsx
+│   │   ├── SearchBar.jsx
+│   │   └── SortDropdown.jsx
+│   │
+│   ├── hooks/
+│   │   ├── useMovies.js
+│   │   └── useFavorites.js
+│   │
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   └── Favorites.jsx
+│   │
+│   ├── services/
+│   │   └── tmdbApi.js
+│   │
+│   ├── utils/
+│   │   └── movieUtils.js
+│   │
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+│
+├── .env
+├── .gitignore
+├── package.json
+├── eslint.config.js
+├── vite.config.js
+└── README.md
