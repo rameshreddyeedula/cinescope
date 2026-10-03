@@ -6,7 +6,7 @@ Users can search for movies, explore popular movies, filter movies by language, 
 
 ## 🚀 Live Demo
 
-[View CineScope Live](YOUR_NETLIFY_URL)
+[View CineScope Live](https://cinescope-ramesh.netlify.app/)
 
 ## 💻 GitHub Repository
 
